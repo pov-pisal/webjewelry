@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* ! Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+
+/*! container */
+.container {
+    padding: 0 12%;
+}
+
+/* ! Navigation */
+.navigation {
+    
+    padding: 1.2rem 12%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation .brand {
+    cursor: pointer;
+    color: black;
+    font-size: 1rem;
+    padding: 15px 0 15px 0;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navigation ul li {
+    position: relative;
+    padding: 15px 0;
+}
+
+.navigation ul li a{
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.navigation ul li a:hover {
+    color: gray;
+}
+
+.navigation ul li::after{
+    position: absolute;
+    background: #000;
+    content: '';
+    left: 0;
+    width: 0;
+    bottom: 10px;
+    height: 3px;
+    transition: 0.5s;
+}
+.navigation ul li:hover::after {
+    width:100%;
+}
+/* ! End Navigation */
+
+/* ! Products Section */
+.home-ring {
+    margin: 0.5em 0;
+    text-align: start;
+}
+
+.products {
+    display: flex;
+}
+.items {
+    flex: 5;
+}
+.announment {
+    flex: 1;
+    text-align: center;
+}
+
+.products .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.carts {
+    margin-bottom: 3em;
+}
+
+.carts img {
+    height: 22rem;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+}
+.carts img:hover {
+    transform: scale(0.9)
+}
+.carts h2, p{
+    text-align: center;
+    font-weight: 100;
+}
+
+/*! TRENDING NOW  */
+.trending {
+    background-color: #faf5f0;
+    padding: 1rem;
+    text-align: center;
+    height: 120vh;
+}
+.trending p {
+    margin-bottom: 2em;
+}
+.trending img {
+    background-color: #faf5f0;
+    height: 12em;
+    width: 12em;
+}
+
+/* ! Footer */
+footer {
+    background: #FAF5F0;
+    color: #666;
+}
+
+.gb-foot {
+    background: #FAF5F0;
+    gap: 1rem;
+    height: 30vh;
+    padding: 5% 5% 15% 5%;
+    display: flex;
+    line-height: 1.5rem;
+}
+.gb-foot h3 {
+    margin-bottom: 1.5rem;
+}
+.gb-foot h1 {
+    margin-bottom: 1.5rem;
+}
+.foot-brand {
+    flex: 2;
+}
+.foot-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.foot-nav a {
+    text-decoration: none;
+    color: #666;
+}
+.foot-info {
+    flex: 1;
+}
+.foot-info p {
+    text-align: start;
+}
+.foot-time {
+ flex: 1;
+}
+.foot-time p {
+    text-align: start;
+}
+.copyright {
+    text-align: center;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+.icons i {
+    color: black;
+    padding: 0 1rem;
+}
+.icons a:hover {
+    color: #467f87;
+    transform: scale(1.06);
+}
+
+.icons i:hover {
+    transform: scale(1.5);
+}
